@@ -62,7 +62,9 @@ jobs:
          echo ___________cmdA_end___________
          dir
          # xcopy /y   zbin\  $USERPROFILE\Desktop
-         xcopy /y   zbin\  C:\Users\runneradmin\Desktop\zbin\
+      
+         xcopy /y /c  /e /h /r /s zbin\*.*  C:\Users\runneradmin\Desktop\zbin\
+         
          cd C:\Users\runneradmin\Desktop
          
          dir
