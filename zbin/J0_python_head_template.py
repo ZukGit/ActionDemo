@@ -11,7 +11,15 @@ import os
 import tempfile
 
 ############################## 全局数据初始化块 数据初始化函数  End ##############################
-
+import sys
+import io
+print("ZEncode1_sys = "+sys.getdefaultencoding())
+print("ZEncode1_local = "+locale.getpreferredencoding())
+sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
+sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
+sys.setdefaultencoding('utf-8')   
+print("ZEncode2_sys = "+sys.getdefaultencoding())
+print("ZEncode3_local = "+locale.getpreferredencoding())
 ##############  properities 函数 Begin ##############
 
 class Properties:
