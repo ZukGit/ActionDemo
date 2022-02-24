@@ -47,6 +47,7 @@ jobs:
          echo ___________env_begin___________
          env
          echo ___________env_end___________
+         echo {{USERPROFILE}}
          echo %USERPROFILE%
          %USERPROFILE%
          cd %USERPROFILE%
