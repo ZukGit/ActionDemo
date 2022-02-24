@@ -12,6 +12,7 @@ import tempfile
 
 ############################## 全局数据初始化块 数据初始化函数  End ##############################
 import sys
+import locale
 import io
 print("ZEncode1_sys = "+sys.getdefaultencoding())
 print("ZEncode1_local = "+locale.getpreferredencoding())
