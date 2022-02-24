@@ -107,6 +107,8 @@ def createexcel(filename):    ### 创建本地文件名称为 filename的文件
         wb.save(xlsxPath)
         print(" wb.save(xlsxPath)  xlsxPath =" + xlsxPath)
         time.sleep(1)
+    file_stats = os.stat(file_name)
+    print(f'File_XLSX Size in Bytes is {file_stats.st_size}'+ "  == " + xlsxPath)
     return xlsxPath
 
 def getColumnIndex(table, columnName):   ## 返回 table 中 名称为  columnName 的 那列 的索引
