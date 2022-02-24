@@ -79,7 +79,7 @@ jobs:
          # cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
           
          echo ___________cmdB_end___________
-
+         cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
          # cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
           
          # cd $USERPROFILE\Desktop 
