@@ -62,13 +62,14 @@ jobs:
          echo ___________cmdA_end___________
          dir
          # xcopy /y   zbin\  $USERPROFILE\Desktop
-         xcopy /y   zbin\  C:\Users\runneradmin\Desktop
+         xcopy /y   zbin\  C:\Users\runneradmin\Desktop\zbin\
          cd C:\Users\runneradmin\Desktop
          
          dir
-     
+         cd C:\Users\runneradmin\Desktop\zbin
+         dir
          # cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
-         # cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat
+         cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat
 
          # cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
           
