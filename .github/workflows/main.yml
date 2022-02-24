@@ -59,12 +59,15 @@ jobs:
          echo ___________env_end___________
        
          echo USERPROFILE__Begin  $USERPROFILE
-
+         echo ___________cmdA_end___________
+         dir
          xcopy /y   zbin\  $USERPROFILE\Desktop
+         cd C:\Users\runneradmin\Desktop
+         dir
      
          cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
          cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat
-         echo ___________cmdA_end___________
+
          cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
           
          echo ___________cmdB_end___________
