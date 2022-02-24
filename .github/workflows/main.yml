@@ -68,6 +68,9 @@ jobs:
          dir
          cd C:\Users\runneradmin\Desktop\zbin
          dir
+         
+         cd C:\Users\runneradmin\Desktop\zbin\win_zbin
+         dir
          # cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
          cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat
 
