@@ -85,6 +85,14 @@ jobs:
          # cd $USERPROFILE\Desktop 
          dir
          
+         C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat  day_20220223   &&   C:\Users\runneradmin\Desktop\zbin\J0_DayPython\J0_0000_call_day_python.bat  20220223 && C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat #_38 C:\Users\runneradmin\Desktop\zbin\J0_Data\
+         echo ___________win_zbin_end___________
+         cd C:\Users\runneradmin\Desktop\zbin\win_zbin
+         dir
+         echo ___________zbin_zbin_end___________
+
+          cd C:\Users\runneradmin\Desktop\zbin\
+          dir
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
