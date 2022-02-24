@@ -58,12 +58,10 @@ jobs:
          env
          echo ___________env_end___________
        
-         echo $USERPROFILE
-         echo %USERPROFILE%
+         echo USERPROFILE__Begin  $USERPROFILE
+
          xcopy /y   zbin\  $USERPROFILE\Desktop
-         cd $USERPROFILE\Desktop
-         
-         dir
+     
         
          echo ___________cmdA_end___________
          cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
@@ -71,7 +69,8 @@ jobs:
          echo ___________cmdB_end___________
          cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
           
-    
+         cd $USERPROFILE\Desktop 
+         dir
          
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
