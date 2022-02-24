@@ -65,6 +65,10 @@ jobs:
       
          xcopy /y /c  /e /h /r /s zbin\*.*  C:\Users\runneradmin\Desktop\zbin\
          
+         pip install tushare
+         pip install pandas
+         pip install openpyxl
+
          cd C:\Users\runneradmin\Desktop
          
          dir
@@ -85,7 +89,7 @@ jobs:
          # cd $USERPROFILE\Desktop 
          dir
          
-         C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat  day_20220223   &&   C:\Users\runneradmin\Desktop\zbin\J0_DayPython\J0_0000_call_day_python.bat  20220223 && C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat #_38 C:\Users\runneradmin\Desktop\zbin\J0_Data\
+         C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat  day_20220223   &&   C:\Users\runneradmin\Desktop\zbin\J0_DayPython\J0_0000_call_day_python.bat  20220223 && C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat _38 C:\Users\runneradmin\Desktop\zbin\J0_Data\
          echo ___________win_zbin_end___________
          cd C:\Users\runneradmin\Desktop\zbin\win_zbin
          dir
