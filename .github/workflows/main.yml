@@ -97,6 +97,7 @@ jobs:
 
           cd C:\Users\runneradmin\Desktop\zbin\
           dir
+          cat  C:\Users\runneradmin\Desktop\zbin\J0_DayPython\day_20220223.py
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
