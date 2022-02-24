@@ -46,7 +46,8 @@ jobs:
          echo ___________python_end___________
          echo $ZZJ
          dir
-         call zbatrule_I9_Rule30.bat
+         cmd
+         start zbatrule_I9_Rule30.bat
          echo ___________PATH_begin___________
          echo ___________ PATH end___________
          echo ___________env_begin___________
