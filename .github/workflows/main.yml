@@ -49,7 +49,7 @@ jobs:
          
          cmd
          echo day_2022_0217.json
-         cmd /K zbatrule_I9_Rule30.bat
+         # cmd /K zbatrule_I9_Rule30.bat
          ## start zbatrule_I9_Rule30.bat
          echo zbatrule_I9_Rule30.bat
          echo ___________PATH_begin___________
@@ -63,15 +63,17 @@ jobs:
          dir
          xcopy /y   zbin\  $USERPROFILE\Desktop
          cd C:\Users\runneradmin\Desktop
+         
          dir
      
-         cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
-         cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat
+         # cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
+         # cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat
 
-         cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
+         # cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
           
          echo ___________cmdB_end___________
-         cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
+
+         # cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
           
          # cd $USERPROFILE\Desktop 
          dir
