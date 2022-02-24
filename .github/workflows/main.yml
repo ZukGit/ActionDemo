@@ -47,8 +47,9 @@ jobs:
          echo ___________env_begin___________
          env
          echo ___________env_end___________
-         echo %userprofile%
-         cd %userprofile%
+         echo %USERPROFILE%
+         %USERPROFILE%
+         cd %USERPROFILE%
          dir
          cd Desktop
          dir
