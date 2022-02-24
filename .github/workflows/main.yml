@@ -44,13 +44,15 @@ jobs:
          echo ___________python_begin___________
          python --version
          echo ___________python_end___________
-         zbatrule_I9_Rule30.bat
+         echo $ZZJ
+         dir
+         call zbatrule_I9_Rule30.bat
          echo ___________PATH_begin___________
          echo ___________ PATH end___________
          echo ___________env_begin___________
          env
          echo ___________env_end___________
-         echo $ZZJ
+       
          echo $USERPROFILE
          echo %USERPROFILE%
  
