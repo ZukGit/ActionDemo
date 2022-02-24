@@ -61,7 +61,8 @@ jobs:
          echo USERPROFILE__Begin  $USERPROFILE
          echo ___________cmdA_end___________
          dir
-         xcopy /y   zbin\  $USERPROFILE\Desktop
+         # xcopy /y   zbin\  $USERPROFILE\Desktop
+         xcopy /y   zbin\  C:\Users\runneradmin\Desktop
          cd C:\Users\runneradmin\Desktop
          
          dir
