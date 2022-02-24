@@ -24,6 +24,8 @@ jobs:
     steps:
       # Checks-out your repository under $GITHUB_WORKSPACE, so your job can access it
       - uses: actions/checkout@v2
+        env: 
+          ZZJ: zukgit
 
       # Runs a single command using the runners shell
       - name: Run a one-line script
@@ -47,13 +49,13 @@ jobs:
          echo ___________env_begin___________
          env
          echo ___________env_end___________
-         echo {{USERPROFILE}}
+         echo $ZZJ
+         echo $USERPROFILE
          echo %USERPROFILE%
-         %USERPROFILE%
-         cd %USERPROFILE%
+ 
+         cd $USERPROFILE
          dir
-         cd Desktop
-         dir
+    
          
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
