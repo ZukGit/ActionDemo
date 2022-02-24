@@ -46,6 +46,7 @@ jobs:
          echo ___________python_end___________
          echo $ZZJ
          dir
+         
          cmd
          echo day_2022_0217.json
          cmd /K zbatrule_I9_Rule30.bat
@@ -59,9 +60,17 @@ jobs:
        
          echo $USERPROFILE
          echo %USERPROFILE%
- 
-         cd $USERPROFILE
+         xcopy /y   zbin\  $USERPROFILE\Desktop
+         cd $USERPROFILE\Desktop
+         
          dir
+        
+         echo ___________cmdA_end___________
+         cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
+          
+         echo ___________cmdB_end___________
+         cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
+          
     
          
       # Runs a set of commands using the runners shell
