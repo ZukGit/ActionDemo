@@ -42,7 +42,6 @@ jobs:
          python --version
          echo ___________python_end___________
          echo ___________PATH_begin___________
-         PATH
          echo ___________ PATH end___________
          echo ___________env_begin___________
          env
