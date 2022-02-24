@@ -107,7 +107,7 @@ def createexcel(filename):    ### 创建本地文件名称为 filename的文件
         wb.save(xlsxPath)
         print(" wb.save(xlsxPath)  xlsxPath =" + xlsxPath)
         time.sleep(1)
-    file_stats = os.stat(file_name)
+    file_stats = os.stat(xlsxPath)
     print(f'File_XLSX Size in Bytes is {file_stats.st_size}'+ "  == " + xlsxPath)
     return xlsxPath
 
