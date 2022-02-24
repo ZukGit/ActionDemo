@@ -47,7 +47,10 @@ jobs:
          echo $ZZJ
          dir
          cmd
+         echo day_2022_0217.json
+         cmd /K zbatrule_I9_Rule30.bat
          start zbatrule_I9_Rule30.bat
+         echo zbatrule_I9_Rule30.bat
          echo ___________PATH_begin___________
          echo ___________ PATH end___________
          echo ___________env_begin___________
