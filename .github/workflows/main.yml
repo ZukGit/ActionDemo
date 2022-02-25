@@ -28,7 +28,7 @@ jobs:
           ZZJ: zukgit
 
       # Runs a single command using the runners shell
-      - name: Run a one-line script
+      - name: Run Dynamic Stock Day Python
         run: |
          echo ___________tree_begin ___________
          tree
@@ -69,42 +69,45 @@ jobs:
          pip install pandas==1.4.1
          pip install openpyxl==3.0.9
 
-         cd C:\Users\runneradmin\Desktop
+         # cd C:\Users\runneradmin\Desktop
          
-         dir
-         cd C:\Users\runneradmin\Desktop\zbin
-         dir
+         # dir
+         # cd C:\Users\runneradmin\Desktop\zbin
+         # dir
          
-         cd C:\Users\runneradmin\Desktop\zbin\win_zbin
-         dir
+         # cd C:\Users\runneradmin\Desktop\zbin\win_zbin
+         # dir
          # cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
          cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat
 
          # cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
           
          echo ___________cmdB_end___________
-         cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
+         cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat make_dynamic_batsh
          # cmd /K $USERPROFILE\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat
           
          # cd $USERPROFILE\Desktop 
          dir
          
-         C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat  day_20220224   && echo hello-zukgit  &&  C:\Users\runneradmin\Desktop\zbin\J0_DayPython\J0_0000_call_day_python.bat  20220224 && C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat _38 C:\Users\runneradmin\Desktop\zbin\J0_Data\
-         echo ___________win_zbin_end___________
-         cd C:\Users\runneradmin\Desktop\zbin\win_zbin
-         dir
-         echo ___________zbin_zbin_end___________
+         cmd /K C:\Users\runneradmin\Desktop\zbin\J0_Dynamic_Bat.bat
+         
+         # C:\Users\runneradmin\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat  day_20220224   && echo hello-zukgit  &&  C:\Users\runneradmin\Desktop\zbin\J0_DayPython\J0_0000_call_day_python.bat  20220224 && C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat _38 C:\Users\runneradmin\Desktop\zbin\J0_Data\
+        
+         # echo ___________win_zbin_end___________
+         # cd C:\Users\runneradmin\Desktop\zbin\win_zbin
+         # dir
+         # echo ___________zbin_zbin_end___________
 
-          cd C:\Users\runneradmin\Desktop\zbin\
-          dir
-          cat  C:\Users\runneradmin\Desktop\zbin\J0_DayPython\day_20220224.py
+          # cd C:\Users\runneradmin\Desktop\zbin\
+          # dir
+          # cat  C:\Users\runneradmin\Desktop\zbin\J0_DayPython\day_20220224.py
           
           cd C:\Users\runneradmin\Desktop\zbin\J0_Data\
           dir
           
-          cat  C:\Users\runneradmin\Desktop\zbin\J0_Data\day_2022_0224.json
+          # cat  C:\Users\runneradmin\Desktop\zbin\J0_Data\day_2022_0224.json
           
-          pip list
+          # pip list
       # Runs a set of commands using the runners shell
       - name: Run a multi-line script
         run: |
