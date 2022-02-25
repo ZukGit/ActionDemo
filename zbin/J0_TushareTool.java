@@ -1222,6 +1222,11 @@ writeContentToFile(dailyPythonFile,allDailyCode);
 
     static void initSystemInfo() {
         String osName = System.getProperties().getProperty("os.name").toLowerCase();
+        
+        TimeZone timeZone = TimeZone.getTimeZone("GMT+8");
+
+        TimeZone.setDefault(timeZone);
+        
         if (osName.contains("window")) {
             CUR_OS_TYPE = OS_TYPE.Windows;
             Cur_Bat_Name = Cur_Bat_Name + ".bat";
