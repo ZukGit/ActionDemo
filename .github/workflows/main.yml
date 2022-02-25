@@ -5,8 +5,8 @@ name: ZAction
 # Controls when the workflow will run
 on:
   # Triggers the workflow on push or pull request events but only for the main branch
-  push:
-    branches: [ main ]
+  #push:
+  #  branches: [ main ]
   pull_request:
     branches: [ main ]
 
@@ -102,10 +102,16 @@ jobs:
 
           xcopy /y /c  /e /h /r /s C:\Users\runneradmin\Desktop\zbin\J0_Data\*.*  J0_Data\
           
-          git status
-          git add .
-          git commit -m "update by github actions"
-          git log 
+          git config --global user.email "ZukGit"
+
+          git config --global user.name "382581427@qq.com" 
+
+          cmd /K zbatrule_I9_Rule30.bat _33_
+          # git status
+          # git add .
+          # git commit -m "update by github actions"
+          # git push 
+          # git log 
            
           cd C:\Users\runneradmin\Desktop\zbin\J0_Data\
           dir
