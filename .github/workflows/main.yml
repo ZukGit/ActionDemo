@@ -46,11 +46,9 @@ jobs:
          echo ___________python_end___________
          echo $ZZJ
          dir
-         
          cmd
          echo day_2022_0217.json
          # cmd /K zbatrule_I9_Rule30.bat
-         ## start zbatrule_I9_Rule30.bat
          echo zbatrule_I9_Rule30.bat
          echo ___________PATH_begin___________
          echo ___________ PATH end___________
@@ -101,7 +99,14 @@ jobs:
           # cd C:\Users\runneradmin\Desktop\zbin\
           # dir
           # cat  C:\Users\runneradmin\Desktop\zbin\J0_DayPython\day_20220224.py
+
+          xcopy /y /c  /e /h /r /s C:\Users\runneradmin\Desktop\zbin\J0_Data\*.*  J0_Data\
           
+          git status
+          git add .
+          git commit -m "update by github actions"
+          git log 
+           
           cd C:\Users\runneradmin\Desktop\zbin\J0_Data\
           dir
           
