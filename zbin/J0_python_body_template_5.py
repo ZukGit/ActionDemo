@@ -1,11 +1,6 @@
 #  《First_Define_Template_1》= 《# 【ZHoldPlace_NodeName】_zukgit_website  =   【ZHoldPlace_Node_Website】》
 #  《First_Define_Template_1》= 《tree_node_name="【ZHoldPlace_NodeName】"+"_"》
 
-#  《Method_Call_Template_1》= 《createexcel('【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】.xlsx')》
-#  《Method_Call_Template_1》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_book = load_workbook('【ZHoldPlace_J0_Dir_PATH】【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】.xlsx')》
-#  《Method_Call_Template_1》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_excel_writer = pd.ExcelWriter('【ZHoldPlace_J0_Dir_PATH】【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】.xlsx', engine='openpyxl')》
-#  《Method_Call_Template_1》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_excel_writer.book = 【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_book》
-#  《Method_Call_Template_1》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_excel_writer.sheets = dict((ws.title, ws) for ws in 【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_book.worksheets)》
 #  《Method_Call_Template_1》= 《J0_PROPS.put(tree_node_name+"record_date", "【ZHoldPlace_Mstart_date】01")       ###  更新 记录日期》
 
 #  《Method_Call_Template_2》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_day_date】 = pro.【ZHoldPlace_pythonMethodName】(【ZHoldPlace_propKey2ValueList】, fields='【ZHoldPlace_fieldList】')》
@@ -20,8 +15,19 @@
 #  《Method_Call_Template_2》= 《for table_name in 【ZHoldPlace_pythonMethodName】_【ZHoldPlace_day_date】.columns.values.tolist():》
 #  《Method_Call_Template_2》= 《    【ZHoldPlace_pythonMethodName】_【ZHoldPlace_day_date】_addname_dataframe[table_name] = 【ZHoldPlace_pythonMethodName】_【ZHoldPlace_day_date】[table_name]》
 #  《Method_Call_Template_2》= 《print("【ZHoldPlace_leaf_chinese_title】  【ZHoldPlace_pythonMethodName】_【ZHoldPlace_day_date】 返回数据 row 行数 = "+str(【ZHoldPlace_pythonMethodName】_【ZHoldPlace_day_date】.shape[0]))》 
-#  《Method_Call_Template_2》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_day_date】_addname_dataframe.to_excel(【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_excel_writer,'【ZHoldPlace_DayMonthIndex_Xinqi】',index=False)》
-#  《Method_Call_Template_2》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_excel_writer.save()》
+
+
+#  《Method_Call_Template_3》= 《createexcel('【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】.xlsx')》
+#  《Method_Call_Template_3》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_book = load_workbook('【ZHoldPlace_J0_Dir_PATH】【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】.xlsx')》
+#  《Method_Call_Template_3》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_excel_writer = pd.ExcelWriter('【ZHoldPlace_J0_Dir_PATH】【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】.xlsx', engine='openpyxl')》
+#  《Method_Call_Template_3》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_excel_writer.book = 【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_book》
+#  《Method_Call_Template_3》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_excel_writer.sheets = dict((ws.title, ws) for ws in 【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_book.worksheets)》
+#  《Method_Call_Template_3》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_day_date】_addname_dataframe.to_excel(【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_excel_writer,'【ZHoldPlace_DayMonthIndex_Xinqi】',index=False)》
+#  《Method_Call_Template_3》= 《【ZHoldPlace_pythonMethodName】_【ZHoldPlace_Mstart_date】_excel_writer.save()》
+
+
+
+
 
 #  《Tail_Define_Template_1》= 《J0_PROPS.put(tree_node_name+"record_date", "【ZHoldPlace_TomorrowDay_YYYYMMDD】")       ###  更新 记录日期》
 
