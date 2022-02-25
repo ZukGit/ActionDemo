@@ -7517,6 +7517,8 @@ public class G2_ApplyRuleFor_TypeFile {
 					isDirOperation = true;
 					inputDirFile = inputDir;
 				}
+				
+		
 
 				System.out.println("initParamsWithInputList[" + i + "] = " + strInput + "  inputDir.exists()="
 						+ inputDir.exists() + "  inputDir.isDirectory()=" + inputDir.isDirectory());
@@ -7568,6 +7570,8 @@ public class G2_ApplyRuleFor_TypeFile {
 					if (inputFileName.endsWith(".xlsx") || inputFileName.endsWith(".xls")) {
 						xlsxFileList.add(fileItem);
 					}
+					
+					System.out.println("inputDir_xlsx["+i+"] = "+ fileItem.getAbsolutePath()+"  Size="+fileItem.length() );
 
 				}
 
