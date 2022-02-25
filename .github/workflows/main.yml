@@ -65,9 +65,9 @@ jobs:
       
          xcopy /y /c  /e /h /r /s zbin\*.*  C:\Users\runneradmin\Desktop\zbin\
          
-         pip install tushare
-         pip install pandas
-         pip install openpyxl
+         pip install tushare==1.2.84
+         pip install pandas==1.4.1
+         pip install openpyxl==3.0.9
 
          cd C:\Users\runneradmin\Desktop
          
