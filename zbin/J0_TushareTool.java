@@ -1682,8 +1682,8 @@ writeContentToFile(dailyPythonFile,allDailyCode);
 
         		tempSB.append(win_zbinPath+File.separator+Cur_Bat_Name+"  day_"+lastTradeDay+" && ");
         		tempSB.append(J0_call_day_python_bat_File.getAbsolutePath()+ "  "+ lastTradeDay +" && ");
-        		tempSB.append(win_zbinPath+File.separator+"zrule_apply_G2.bat"+ " _38  "+ J0_Dir_Path +"  ");
-        		dynamicBatShContentList.add(tempSB.toString());
+        		tempSB.append(win_zbinPath+File.separator+"zrule_apply_G2.bat"+ " _38  "+ J0_Dir_Path +"  && ");
+       
         		
         		// zrule_apply_G2.bat #_38 "+  J0_Dir_Path
         		
@@ -1700,13 +1700,15 @@ writeContentToFile(dailyPythonFile,allDailyCode);
 
         		 // 需要去掉 命令中的 #  井号   可能有歧义
         		//    依据当前的 json 文件 创建 对应的  2022_main_stock.xlsx  2023_main_stock.xlsx 文件
-         		StringBuilder createYearMainCommandSB = new StringBuilder();
+//         		StringBuilder createYearMainCommandSB = new StringBuilder();
                 String Cur_J0_GuPiao_Analysis_Bat_Name = "zgupiao_analysis_J0"+BAT_OR_SH_Point;
                 
          		// zgupiao_analysis_J0.bat  #_1  yyyymmdd_20220303
-                createYearMainCommandSB.append(win_zbinPath+File.separator+Cur_J0_GuPiao_Analysis_Bat_Name+"  _1  yyyymmdd_"+lastTradeDay+" ");
-           		dynamicBatShContentList.add(createYearMainCommandSB.toString());
-        		
+                tempSB.append(win_zbinPath+File.separator+Cur_J0_GuPiao_Analysis_Bat_Name+"  _1  yyyymmdd_"+lastTradeDay+" ");
+
+           		
+         		dynamicBatShContentList.add(tempSB.toString());
+         		
            		
            		
         	}else {
