@@ -1697,12 +1697,14 @@ writeContentToFile(dailyPythonFile,allDailyCode);
         		
         		
 
-        
+
+        		 // 需要去掉 命令中的 #  井号   可能有歧义
         		//    依据当前的 json 文件 创建 对应的  2022_main_stock.xlsx  2023_main_stock.xlsx 文件
          		StringBuilder createYearMainCommandSB = new StringBuilder();
                 String Cur_J0_GuPiao_Analysis_Bat_Name = "zgupiao_analysis_J0"+BAT_OR_SH_Point;
+                
          		// zgupiao_analysis_J0.bat  #_1  yyyymmdd_20220303
-                createYearMainCommandSB.append(win_zbinPath+File.separator+Cur_J0_GuPiao_Analysis_Bat_Name+"  #_1  yyyymmdd_"+lastTradeDay+" ");
+                createYearMainCommandSB.append(win_zbinPath+File.separator+Cur_J0_GuPiao_Analysis_Bat_Name+"  _1  yyyymmdd_"+lastTradeDay+" ");
            		dynamicBatShContentList.add(createYearMainCommandSB.toString());
         		
            		
