@@ -65,7 +65,7 @@ jobs:
          # xcopy /y   zbin\  $USERPROFILE\Desktop
       
          xcopy /y /c  /e /h /r /s zbin\*.*  C:\Users\runneradmin\Desktop\zbin\
-         
+         xcopy /y /c  /e /h /r /s J0_Data\*.*  C:\Users\runneradmin\Desktop\zbin\J0_Data\
          pip install tushare==1.2.84
          pip install pandas==1.4.1
          pip install openpyxl==3.0.9
