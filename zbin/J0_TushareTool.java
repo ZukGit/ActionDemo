@@ -1673,15 +1673,17 @@ writeContentToFile(dailyPythonFile,allDailyCode);
         		dynamicBatShContentList.add("@echo off");
         		dynamicBatShContentList.add("Setlocal ENABLEDELAYEDEXPANSION");    		
         		StringBuilder tempSB = new StringBuilder();
+        		
+        		
+        		// 下载当天的 xlsx 文件 并 转为 json  
+        		// C:\Users\zhuzj5\Desktop\zbin\win_zbin\zstock_tushare_tool_J0.bat  day_20220224 && 
+        		// C:\Users\zhuzj5\Desktop\zbin\J0_DayPython\J0_0000_call_day_python.bat  20220224 && 
+        		// C:\Users\zhuzj5\Desktop\zbin\win_zbin\zrule_apply_G2.bat _38  C:\Users\zhuzj5\Desktop\zbin\J0_Data\  
+
         		tempSB.append(win_zbinPath+File.separator+Cur_Bat_Name+"  day_"+lastTradeDay+" && ");
-        	
         		tempSB.append(J0_call_day_python_bat_File.getAbsolutePath()+ "  "+ lastTradeDay +" && ");
-
         		tempSB.append(win_zbinPath+File.separator+"zrule_apply_G2.bat"+ " _38  "+ J0_Dir_Path +"  ");
-        		
-        		
         		dynamicBatShContentList.add(tempSB.toString());
-
         		
         		// zrule_apply_G2.bat #_38 "+  J0_Dir_Path
         		
@@ -1689,9 +1691,22 @@ writeContentToFile(dailyPythonFile,allDailyCode);
         		// sb.append(Cur_Bat_Name+"  day_"+lastTradeDay+"   &&  " + " "+ J0_call_day_python_bat_File.getAbsolutePath() +"  "+ lastTradeDay +" && zrule_apply_G2.bat #_38 "+  J0_Dir_Path +"  && "+" adb push  "+J0_Dir_Path+".  /sdcard/zmain/stock/ "+ " \n && "+ " adb push "+zbinPath+File.separator+"J0_股票列表.xlsx  /sdcard/zmain/stock/J0_股票列表.xlsx ");
 // zstock_tushare_tool_J0.bat  day_20220224   &&   C:\Users\zhuzj5\Desktop\zbin\J0_DayPython\J0_0000_call_day_python.bat  20220224 && zrule_apply_G2.bat #_38 C:\Users\zhuzj5\Desktop\zbin\J0_Data\  &&  adb push  C:\Users\zhuzj5\Desktop\zbin\J0_Data\.  /sdcard/zmain/stock/  
 //  &&  adb push C:\Users\zhuzj5\Desktop\zbin\J0_股票列表.xlsx  /sdcard/zmain/stock/J0_股票列表.xlsx 
-        		 
+      		  // C:\Users\zhuzj5\Desktop\zbin\win_zbin\zgupiao_analysis_J0.bat  #_1  yyyymmdd_20220224
+	 
         		
         		
+        		
+
+        
+        		//    依据当前的 json 文件 创建 对应的  2022_main_stock.xlsx  2023_main_stock.xlsx 文件
+         		StringBuilder createYearMainCommandSB = new StringBuilder();
+                String Cur_J0_GuPiao_Analysis_Bat_Name = "zgupiao_analysis_J0"+BAT_OR_SH_Point;
+         		// zgupiao_analysis_J0.bat  #_1  yyyymmdd_20220303
+                createYearMainCommandSB.append(win_zbinPath+File.separator+Cur_Bat_Name+"  #_1  yyyymmdd_"+lastTradeDay+" ");
+           		dynamicBatShContentList.add(createYearMainCommandSB.toString());
+        		
+           		
+           		
         	}else {
         		// SH 的动态写入   等待填充
         		

@@ -87,6 +87,7 @@ import org.apache.commons.io.FileUtils;
 import org.apache.pdfbox.io.MemoryUsageSetting;
 import org.apache.pdfbox.multipdf.PDFMergerUtility;
 import org.apache.poi.hssf.usermodel.HSSFWorkbook;
+import org.apache.poi.openxml4j.util.ZipSecureFile;
 import org.apache.poi.ss.usermodel.Cell;
 import org.apache.poi.ss.usermodel.DateUtil;
 import org.apache.poi.ss.usermodel.Row;
@@ -7603,6 +7604,7 @@ public class G2_ApplyRuleFor_TypeFile {
 			try {
 				FileInputStream inp = new FileInputStream(xlsxFile.getAbsolutePath());
 
+				ZipSecureFile.setMinInflateRatio(-1.0d);
 				Workbook workbook = null;
 //		            Workbook workbook = WorkbookFactory.create(inp);
 
