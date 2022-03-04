@@ -1,0 +1,157 @@
+λ zgupiao_analysis_J0.bat
+args[0] = D:\Git_Dir\ActionDemo
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+isNumeric(clearChineseStr) = true   clearChineseStr.length=6
+对Type文件内容 进行 Index 规则的处理  identy=【 Type_Index 】【 文件后缀_当前操作逻辑索引】
+
+当前已实现的替换逻辑如下:
+
+═══════════════════使用方法列表 Begin═══════════════════
+
+zgupiao_analysis_J0.bat  #_1    [索引 1]  描述:
+zgupiao_analysis_J0.bat #_1   year_2022   ###  对当前2022_main_stock.xlsx 文件进行数据添加  不打印Log
+zgupiao_analysis_J0.bat #_1   year_2022 showlog_true   ###  对当前2022_main_stock.xlsx 文件进行数据添加  打印L
+zgupiao_analysis_J0.bat #_1   yyyymmdd_20220303  showlog_true  ###  对当前2022_main_stock.xlsx  指定截至日期
+文件进行数据添加 会打印Log
+
+zgupiao_analysis_J0.bat  #_2    [索引 2]  描述:
+zgupiao_analysis_J0.bat #_2    ###   计算当前最新最近1 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_3    [索引 3]  描述:
+zgupiao_analysis_J0.bat #_3    ###   计算当前最新最近2 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_4    [索引 4]  描述:
+zgupiao_analysis_J0.bat #_4    ###   计算当前最新最近3 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_5    [索引 5]  描述:
+zgupiao_analysis_J0.bat #_5    ###   计算当前最新最近4 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_6    [索引 6]  描述:
+zgupiao_analysis_J0.bat #_6    ###   计算当前最新最近5 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_7    [索引 7]  描述:
+zgupiao_analysis_J0.bat #_7    ###   计算当前最新最近6 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_8    [索引 8]  描述:
+zgupiao_analysis_J0.bat #_8    ###   计算当前最新最近7 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_9    [索引 9]  描述:
+zgupiao_analysis_J0.bat #_9    ###   计算当前最新最近10 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_10    [索引 10]  描述:
+zgupiao_analysis_J0.bat #_10    ###   计算当前最新最近15 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_11    [索引 11]  描述:
+zgupiao_analysis_J0.bat #_11    ###   计算当前最新最近20 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_12    [索引 12]  描述:
+zgupiao_analysis_J0.bat #_12    ###   计算当前最新最近30 天 记录与平均值的比值
+
+zgupiao_analysis_J0.bat  #_13    [索引 13]  描述:
+zgupiao_analysis_J0.bat #_13    ###   计算当前最新最近2 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_14    [索引 14]  描述:
+zgupiao_analysis_J0.bat #_14    ###   计算当前最新最近3 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_15    [索引 15]  描述:
+zgupiao_analysis_J0.bat #_15    ###   计算当前最新最近4 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_16    [索引 16]  描述:
+zgupiao_analysis_J0.bat #_16    ###   计算当前最新最近5 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_17    [索引 17]  描述:
+zgupiao_analysis_J0.bat #_17    ###   计算当前最新最近6 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_18    [索引 18]  描述:
+zgupiao_analysis_J0.bat #_18    ###   计算当前最新最近7 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_19    [索引 19]  描述:
+zgupiao_analysis_J0.bat #_19    ###   计算当前最新最近8 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_20    [索引 20]  描述:
+zgupiao_analysis_J0.bat #_20    ###   计算当前最新最近9 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_21    [索引 21]  描述:
+zgupiao_analysis_J0.bat #_21    ###   计算当前最新最近10 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_22    [索引 22]  描述:
+zgupiao_analysis_J0.bat #_22    ###   计算当前最新最近15 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_23    [索引 23]  描述:
+zgupiao_analysis_J0.bat #_23    ###   计算当前最新最近20 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_24    [索引 24]  描述:
+zgupiao_analysis_J0.bat #_24    ###   计算当前最新最近30 天 涨跌值 和 涨跌幅 的总和 Sum
+
+zgupiao_analysis_J0.bat  #_25    [索引 25]  描述:
+zgupiao_analysis_J0.bat #_25    ###   计算年内最低 股票价格日期
+
+zgupiao_analysis_J0.bat  #_26    [索引 26]  描述:
+zgupiao_analysis_J0.bat #_26    ###   计算年内最高 股票价格日期
+
+zgupiao_analysis_J0.bat  #_27    [索引 27]  描述:
+zgupiao_analysis_J0.bat #_27    ###   计算年内最低 股票价格价格
+
+zgupiao_analysis_J0.bat  #_28    [索引 28]  描述:
+zgupiao_analysis_J0.bat #_28    ###   计算年内最高 股票价格价格
+
+zgupiao_analysis_J0.bat  #_29    [索引 29]  描述:
+zgupiao_analysis_J0.bat #_29    ###   按顺序时间对比 最高价格最低价格比值
+
+zgupiao_analysis_J0.bat  #_30    [索引 30]  描述:
+zgupiao_analysis_J0.bat #_30    ###   今年以来最最高低价差
+
+zgupiao_analysis_J0.bat  #_31    [索引 31]  描述:
+zgupiao_analysis_J0.bat #_31    ###   今年最高价与最低价相隔的天数
+
+zgupiao_analysis_J0.bat  #_32    [索引 32]  描述:
+zgupiao_analysis_J0.bat #_32    ###   今年最低价与今日(0304)间隔
+
+zgupiao_analysis_J0.bat  #_33    [索引 33]  描述:
+zgupiao_analysis_J0.bat #_33    ###   今年最高价与今日(0304)间隔
+
+═══════════════════使用方法列表 End ═══════════════════
+
+═══════════════════Favorite_Stock 收藏关注股票列表 Begin═══════════════════
+
+write out File OK !  File = C:\Users\zhuzj5\Desktop\zbin\J0_Stock_Favorite.txt
+【0001:000520 长航凤凰】【0002:000672 上峰水泥】【0003:000785 居然之家】【0004:000923 河钢资源】【0005:002023
+【0006:002049 紫光国微】【0007:002164 宁波东力】【0008:002839 张家港行】【0009:002840 华统股份】【0010:003019
+【0011:300131 英唐智控】【0012:300806 斯迪克  】【0013:301101 明月镜片】【0014:430510 丰光精密】【0015:600085
+【0016:601616 广电电气】【0017:603109 神驰机电】【0018:603110 东方材料】【0019:603351 威尔药业】【0020:603477
+【0021:688168 安博通  】【0022:834475 三友科技】
+
+_______打开 J0_Stock_Favorite.txt添加数据
+notepad++ C:\Users\zhuzj5\Desktop\zbin\J0_Stock_Favorite.txt
+═══════════════════Favorite_Stock 收藏关注股票列表 End ═══════════════════
+
+═══════════════════ xxxx_main_stock.xlsx  情况 Begin═══════════════════
+
+MainStock[1_1]:2022_main_stock.xlsx 【年总项:242】 【至今项:39】 【记账项:37】 【遗落项:2】 【今日账:false】
+【今日是否能更新(17点):false】
+____[json_init_command]:
+
+zstock_tushare_tool_J0.bat file_C:\Users\zhuzj5\Desktop\zbin\J0_Data\2022_main_stock.log  &&  C:\Users\zhuzj5\Desktop\zbin\J0_DayPython\J0_0000_call_fileday_python.bat C:\Users\zhuzj5\Desktop\zbin\J0_Data\2022_main_stock.log && zrule_apply_G2.bat #_38 C:\Users\zhuzj5\Desktop\zbin\J0_Data\ && zgupiao_analysis_J0.bat  #_1  yyyymmdd_20220303
+
+———————————————————————————————————————————————————————
+——————
