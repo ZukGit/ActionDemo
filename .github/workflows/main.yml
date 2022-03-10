@@ -106,7 +106,7 @@ jobs:
           # xcopy /y /c  /e /h /r /s C:\Users\runneradmin\Desktop\zbin\J0_Data\*.*  J0_Data\
           
           # cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat 
-          zrule_apply_G2.bat  _51 src_C:\Users\runneradmin\Desktop\zbin\J0_Data\  dst_D:\a\ActionDemo\ActionDemo\J0_Data\
+          cmd /K C:\Users\runneradmin\Desktop\zbin\win_zbin\zrule_apply_G2.bat  _51 src_C:\Users\runneradmin\Desktop\zbin\J0_Data\  dst_D:\a\ActionDemo\ActionDemo\J0_Data\
            
           git config --global user.email "ZukGit"
 
