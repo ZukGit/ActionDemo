@@ -523,7 +523,8 @@ public class G2_ApplyRuleFor_TypeFile {
 				File dstMatchFile = new File(dstMatchFilePath);
 				
 				if(dstMatchFile.exists()) {
-					if(dstMatchFile.length() != fileItem.length()) {
+					// 源文件大小要大于 10 
+					if(dstMatchFile.length() != fileItem.length() && fileItem.length() > 10) {
 						
 						// 原目录 有这个文件 但是和 dst 目录不一致 那么也加入 copy 列表
 						needCopyFileList.add(fileItem); 
