@@ -555,8 +555,7 @@ public class G2_ApplyRuleFor_TypeFile {
 					File srcItem = needCopyFileList.get(i);
 					
 					File dstFile = srcFile_dstFile_Map.get(srcItem);
-					System.out.println("开始第["+i+"] 个文件复制 src["+srcItem+"][Size:"+srcItem.length()+"][MD5:"+getMD5Three(srcItem.getAbsolutePath())+"]");	
-					System.out.println("开始第["+i+"] 个文件复制 dst["+dstFile+"][Size:"+dstFile.length()+"][MD5:"+getMD5Three(dstFile.getAbsolutePath())+"]");	
+					System.out.println("开始第["+i+"] 个_SRC_文件复制 src["+srcItem+"][Size:"+srcItem.length()+"][MD5:"+getMD5Three(srcItem.getAbsolutePath())+"]");	
 					System.out.println(""); 
 					
 					if(dstFile == null) {
@@ -570,6 +569,8 @@ public class G2_ApplyRuleFor_TypeFile {
 					
 					fileCopy(srcItem, dstFile);
 					
+					System.out.println("完成第["+i+"] 个_DST_文件复制 dst["+dstFile+"][Size:"+dstFile.length()+"][MD5:"+getMD5Three(dstFile.getAbsolutePath())+"]");	
+
 				}
 				
 				
@@ -12858,6 +12859,11 @@ public class G2_ApplyRuleFor_TypeFile {
 			e.printStackTrace();
 		} catch (IOException e) {
 			e.printStackTrace();
+		} catch (Exception e) {
+			 e.printStackTrace();
+			}
+		if(bi == null) {
+			return "MD5_Null";
 		}
 		return bi.toString(16);
 	}
