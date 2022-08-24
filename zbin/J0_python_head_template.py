@@ -11,15 +11,7 @@ import os
 import tempfile
 
 ############################## 全局数据初始化块 数据初始化函数  End ##############################
-import sys
-import locale
-import io
-print("ZEncode1_sys = "+sys.getdefaultencoding())
-print("ZEncode1_local = "+locale.getpreferredencoding())
-sys.stdout = io.TextIOWrapper(sys.stdout.detach(), encoding = 'utf-8')
-sys.stderr = io.TextIOWrapper(sys.stderr.detach(), encoding = 'utf-8')
-print("ZEncode2_sys = "+sys.getdefaultencoding())
-print("ZEncode3_local = "+locale.getpreferredencoding())
+
 ##############  properities 函数 Begin ##############
 
 class Properties:
@@ -107,8 +99,6 @@ def createexcel(filename):    ### 创建本地文件名称为 filename的文件
         wb.save(xlsxPath)
         print(" wb.save(xlsxPath)  xlsxPath =" + xlsxPath)
         time.sleep(1)
-    file_stats = os.stat(xlsxPath)
-    print(f'File_XLSX Size in Bytes is {file_stats.st_size}'+ "  == " + xlsxPath)
     return xlsxPath
 
 def getColumnIndex(table, columnName):   ## 返回 table 中 名称为  columnName 的 那列 的索引
@@ -189,8 +179,9 @@ print("now_yyyymmdd = "+ str(now_yyyymmdd))
 
 
 
+#pro = ts.pro_api('43acb9a5ddc2cf73c6c4ea54796748f965457ed57daaa736bb778ea2')   ## 自身过期了
+pro = ts.pro_api('c8811a29e9b51d03b2b3f6be3937f331d6187999563900664056c438')    ## 百度查pro_api 得到的 https://www.pythonheidong.com/blog/article/524786/a1fa3d379c91be81a4de/ 
 
-pro = ts.pro_api('43acb9a5ddc2cf73c6c4ea54796748f965457ed57daaa736bb778ea2')
 # print(J0_PROPS.get(tree_node_name+"record_date"))           #根据key读取value
 # J0_PROPS.put(tree_node_name+"record_date", now_yyyymmdd)       ###  覆盖原有的 key 和 value
 #  zukgit
